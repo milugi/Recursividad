@@ -86,7 +86,17 @@ def cantidad (num):
         return 1 + cantidad (num//10)
 
 print(cantidad (454))
+Ejercicio10
+def invertir(numero)
+if(numero<10):  
+return numero
+else:
+return (numero % 10) * (10 ** (len(str(numero))-1)) + invertir(numero//10)
 
+print(invertir(123456))   
+       
+       
+       
 #Ejercicio 11
 def  mcd ( n1 , n2 ):
     if  n2 == 0 :
