@@ -45,6 +45,7 @@ def  potencia ( base , exponente ):
 print (potencia(3,4)
 
 #Ejercicio 5
+
 def caracteres (sec):
     if ( len (sec) == 1):
         return  sec
@@ -184,6 +185,33 @@ def contar_naves(vec):
             return 1 + contar_naves(vec[0:-1])
         else:
             return 0 + contar_naves(vec[0:-1])
+
+#Ejercicio 22
+
+
+
+
+
+
+
+#Ejercicio 23
+
+def TorreHanoi (n, o, d, aux):
+    if (n > 0 ):
+        TorreHanoi ( n- 1, o , aux, d)       TorreHanoi (n -1, aux, d, o)
+        print "\n Se mueve anillo desde torre" + str (o) + "hasta torre" *str (d)
+        TorreHanoi (n-1, aux, d, o)
+
+n = int (input("\n ingresar la cantidad de anillos:"))
+TorreHanoi (n,1,2,3)
+
+#Ejercicio 24 
+
+def sucesion24(num):
+    if(num==1):
+        return 5.25
+    else:
+        return sucesion24(num-1) * 4
 
 #Ejercicio 25
 def sucesion2(n):
